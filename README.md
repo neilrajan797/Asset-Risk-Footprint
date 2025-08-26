@@ -13,7 +13,7 @@
 ## How it works (short)
 - **Data → returns.** Load panel (`symbol, date, close`), pivot to prices, compute daily pct-change returns.  
 - **Full-history filter.** Keep only names with a complete history over the horizon to avoid irregular gaps.  
-- **Risk math.** For a sampled portfolio $\( P \) (|P|=K, equal weights \( w=\tfrac{1}{K}\mathbf{1} \)):  
+- **Risk math.** For a sampled portfolio $\( P \) (|P|=K, equal weights \( w=\tfrac{1}{K}\mathbf{1} \))$:  
   - Portfolio vol \( \sigma(P)=\sqrt{w^\top \Sigma_P w} \)$  
   - MRC vector \( \mathrm{MRC}=\frac{\Sigma_P w}{\sigma(P)} \) ⇒ take component for A  
 - **Monte Carlo.** Sample many portfolios containing A; average σ and MRC to get **E[σ|A]** and **E[MRC_A]**, with a standard error for σ.  
