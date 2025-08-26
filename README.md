@@ -1,6 +1,6 @@
 # Asset Risk Footprint
 
-**What it does.** For each asset **A** in a universe **U**, estimate how much risk it typically brings when it’s included in an equal-weight portfolio of size **K**. The project computes:
+**What it does:** For each asset **A** in a universe **U**, estimate how much risk it typically brings when it’s included in an equal-weight portfolio of size **K**. The project computes:
 
 - **$E[\sigma \mid A \in P,\ |P|=K]$** — expected portfolio volatility across random EW portfolios that include $A$  
 - **$E[\mathrm{MRC}_A]$** — expected **marginal risk contribution** of $A$ in those portfolios  
